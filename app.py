@@ -8,7 +8,7 @@ import os
 app = Flask(__name__)
 
 # ---- Load ML Model (.pkl) ----
-with open('model.pkl', 'rb') as f:
+with open('force_model.pkl', 'rb') as f:
     model = pickle.load(f)
 
 # ---- Azure Blob Storage Details ----
